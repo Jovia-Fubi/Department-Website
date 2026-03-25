@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon icon" id="themeIcon"></i>
+    </button>
+
     <header>
         <div class="container">
             <div class="header-content">
@@ -295,34 +300,46 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: csdepartment@bugemauniversity.com</p>
-                    <p>Phone: +256 700 000000</p>
-                    <p>Location: Main Campus, Computing and Informatics Building</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="about.html">About Us</a></p>
-                    <p><a href="programs.html">Programs</a></p>
-                    <p><a href="admissions.html">Admissions</a></p>
-                    <p><a href="research.html">Research</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <p><a href="student-portal.html">Student Portal</a></p>
-                    <p><a href="course-registration.html">Course Registration</a></p>
-                    <p><a href="downloadable-forms.html">Downloadable Forms</a></p>
-                    <p><a href="#">Academic Calendar</a></p>
+    <!-- Compact Footer -->
+    <footer class="compact-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Bugema University</h3>
+                <p>Department of Computing and Informatics Since 1948</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <hr style="border-color: #34495e; margin: 2rem 0;">
-            <p>&copy; 2026 Bugema University - Department of Computing and Informatics. All rights reserved.</p>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +256 312 351 400</p>
+                <p><i class="fas fa-envelope"></i> info@bugemauniv.ac.ug</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bugema, Luweero, Uganda</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bugema University. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/+256769593407" target="_blank" title="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
     <script>
         // Add fade-in animation on scroll

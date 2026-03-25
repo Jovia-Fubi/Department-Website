@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Bugema University Computing and Informatics</title>
+    <title>Contact Us - Bugema University</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon icon" id="themeIcon"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
         <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="IMG/bu.png" alt="Bugema University Logo">
-                    <div>
-                        <h1>Bugema University</h1>
-                        <p>Department of Computing and Informatics</p>
-                    </div>
+            <div class="top-bar-left">
+                <a href="https://eportal.bugemauniv.ac.ug/" target="_blank">Student Portal</a>
+                <a href="https://erms.bugemauniv.ac.ug/buerms/" target="_blank">Staff Portal</a>
+                <a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning</a>
+                <a href="https://lib.bugemauniv.ac.ug/" target="_blank">Library</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="mailto:info@bugemauniv.ac.ug"><i class="fas fa-envelope"></i> info@bugemauniv.ac.ug</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="IMG/bu.png" alt="Bugema University Logo" class="logo">
+                <div class="header-text">
+                    <h1>Bugema University</h1>
+                    <p>Department of Computing and Informatics</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
@@ -26,24 +50,35 @@
         <div class="nav-container">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
                     <a href="departments.html">Academic</a>
                     <div class="dropdown-content">
-                        <a href="departments.html">Departments</a>
+                        <a href="departments.html">Schools & Departments</a>
                         <a href="programs.html">Programs</a>
                         <a href="admissions.html">Admissions</a>
+                        <a href="timetable.html">Timetable</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="research.html">Research</a>
                     <div class="dropdown-content">
-                        <a href="research.html">Research & Publications</a>
-                        <a href="news.html">News & Events</a>
+                        <a href="research.html">Research Overview</a>
+                        <a href="faculty-achievements.html">Faculty Achievements</a>
+                        <a href="publications.html">Publications</a>
                     </div>
                 </li>
                 <li><a href="staff.html">Staff</a></li>
+                <li><a href="news.html">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="student-portal.html">Student Portal</a>
+                    <div class="dropdown-content">
+                        <a href="student-portal.html">Student Portal</a>
+                        <a href="course-registration.html">Course Registration</a>
+                        <a href="downloadable-forms.html">Forms</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -239,32 +274,6 @@
                 </div>
             </section>
 
-            <!-- Social Media -->
-            <section class="section fade-in">
-                <h2>📱 Connect With Us</h2>
-                <div class="card text-center">
-                    <p>Follow us on social media for updates and community engagement</p>
-                    <div class="grid grid-2" style="max-width: 400px; margin: 2rem auto;">
-                        <div style="text-align: center;">
-                            <div style="width: 60px; height: 60px; background: #1877f2; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">f</div>
-                            <p>Facebook</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="width: 60px; height: 60px; background: #1da1f2; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">𝕏</div>
-                            <p>Twitter</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="width: 60px; height: 60px; background: #0077b5; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">in</div>
-                            <p>LinkedIn</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <div style="width: 60px; height: 60px; background: #ff0000; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">▶</div>
-                            <p>YouTube</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- FAQ -->
             <section class="section fade-in">
                 <h2>❓ Frequently Asked Questions</h2>
@@ -294,10 +303,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: csdepartment@bugemauniversity.com</p>
-                    <p>Phone: +256 77584335</p>
-                    <p>Location: Main Campus, Computing and Informatics Building</p>
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +256 312 351 400</p>
+                    <p><i class="fas fa-envelope"></i> info@bugemauniv.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bugema, Luweero, Uganda</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/bugemauniversity" target="_blank" title="Follow us on Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/bugemauniversity" target="_blank" title="Follow us on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/school/bugemauniversity" target="_blank" title="Connect on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/bugemauniversity" target="_blank" title="Subscribe on YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -641,5 +667,12 @@
         // Initialize back to top button
         createBackToTopButton();
     </script>
+    
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/+256769593407" target="_blank" title="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 </body>
 </html>

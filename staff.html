@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff - Bugema University Computing and Informatics</title>
+    <title>Staff - Bugema University</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon icon" id="themeIcon"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
         <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="IMG/bu.png" alt="Bugema University Logo">
-                    <div>
-                        <h1>Bugema University</h1>
-                        <p>Department of Computing and Informatics</p>
-                    </div>
+            <div class="top-bar-left">
+                <a href="https://eportal.bugemauniv.ac.ug/" target="_blank">Student Portal</a>
+                <a href="https://erms.bugemauniv.ac.ug/buerms/" target="_blank">Staff Portal</a>
+                <a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning</a>
+                <a href="https://lib.bugemauniv.ac.ug/" target="_blank">Library</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/+256769593407" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+                <a href="mailto:info@bugemauniv.ac.ug"><i class="fas fa-envelope"></i> info@bugemauniv.ac.ug</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="IMG/bu.png" alt="Bugema University Logo" class="logo">
+                <div class="header-text">
+                    <h1>Bugema University</h1>
+                    <p>Department of Computing and Informatics</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
@@ -26,24 +51,35 @@
         <div class="nav-container">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
                     <a href="departments.html">Academic</a>
                     <div class="dropdown-content">
-                        <a href="departments.html">Departments</a>
+                        <a href="departments.html">Schools & Departments</a>
                         <a href="programs.html">Programs</a>
                         <a href="admissions.html">Admissions</a>
+                        <a href="timetable.html">Timetable</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="research.html">Research</a>
                     <div class="dropdown-content">
-                        <a href="research.html">Research & Publications</a>
-                        <a href="news.html">News & Events</a>
+                        <a href="research.html">Research Overview</a>
+                        <a href="faculty-achievements.html">Faculty Achievements</a>
+                        <a href="publications.html">Publications</a>
                     </div>
                 </li>
                 <li><a href="staff.html">Staff</a></li>
+                <li><a href="news.html">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="student-portal.html">Student Portal</a>
+                    <div class="dropdown-content">
+                        <a href="student-portal.html">Student Portal</a>
+                        <a href="course-registration.html">Course Registration</a>
+                        <a href="downloadable-forms.html">Forms</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -62,44 +98,46 @@
             <section class="section fade-in">
                 <h2>👔 Department Leadership</h2>
                 <div class="grid grid-3">
-                    <div class="card text-center">
-                        <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                            <section class="section text-center">
-                <img src="IMG/ict.png" alt="ICT Staff" style="max-width: 100%; height: auto; border-radius: 40px;">
-            </section>
- 
+                    <div class="card text-center staff-card">
+                        <div class="staff-avatar">
+                            <img src="IMG/ict.png" alt="Tibenda Seth" class="staff-image">
                         </div>
                         <h3>Tibenda Seth</h3>
                         <p><strong>ICT Directorate</strong></p>
                         <p>PhD in Computer Science</p>
                         <p><em>Specialization: Artificial Intelligence, Machine Learning</em></p>
-                        <p><small>Email: tibendaseth@bugemauniversity.com</small></p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> tibendaseth@bugemauniversity.com</p>
+                            <p><i class="fas fa-phone"></i> +256 312 351 401</p>
+                        </div>
                     </div>
 
-                    <div class="card text-center">
-                        <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                               <section class="section text-center">
-                <img src="IMG/hod.png" alt="ICT Staff" style="max-width: 200%; height: auto; border-radius: 40px;">
-            </section>
+                    <div class="card text-center staff-card">
+                        <div class="staff-avatar">
+                            <img src="IMG/hod.png" alt="Ssewankambo Erma" class="staff-image">
                         </div>
                         <h3>Ssewankambo Erma</h3>
                         <p><strong>Head Of Department</strong></p>
                         <p>PhD in Information Technology</p>
                         <p><em>Specialization: Cybersecurity, Network Security</em></p>
-                        <p><small>Email: sarah.nankya@bugemauniversity.com</small></p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> sarah.nankya@bugemauniversity.com</p>
+                            <p><i class="fas fa-phone"></i> +256 312 351 402</p>
+                        </div>
                     </div>
 
-                    <div class="card text-center">
-                        <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                             <section class="section text-center">
-                <img src="IMG/mag.jpeg"ICT Staff" style="max-width: 200%; height: auto; border-radius: 40px;">
-            </section>
+                    <div class="card text-center staff-card">
+                        <div class="staff-avatar">
+                            <img src="IMG/mag.jpeg" alt="Nagwovuma Magret" class="staff-image">
                         </div>
                         <h3>Nagwovuma Magret</h3>
-                        <p><strong>Dean of school of Computing and informaticsr</strong></p>
+                        <p><strong>Dean of School of Computing and Informatics</strong></p>
                         <p>MBA in Educational Management</p>
                         <p><em>Specialization: Academic Administration</em></p>
-                        <p><small>Email: nagMgret@bugemauniversity.com</small></p>
+                        <div class="staff-contact">
+                            <p><i class="fas fa-envelope"></i> nagMgret@bugemauniversity.com</p>
+                            <p><i class="fas fa-phone"></i> +256 312 351 403</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -113,8 +151,8 @@
                     <div class="grid grid-2">
                         <div class="faculty-profile">
                             <div class="faculty-header">
-                                <div class="faculty-avatar" style="text-align: center;">
-                                    <img src="IMG/bal.jpeg" alt="Assoc.Prof.SSALI Robert Balagadde Staff" style="max-width: 100%; height: auto; border-radius: 50%;">
+                                <div class="faculty-avatar">
+                                    <img src="IMG/bal.jpeg" alt="Assoc.Prof.SSALI Robert Balagadde" class="staff-image">
                                 </div>
                                 <div class="faculty-info">
                                     <h3>Assoc.Prof.SSALI Robert Balagadde</h3>
@@ -122,7 +160,7 @@
                                     <p><strong>Department:</strong> Computer Science</p>
                                     <p><strong>Email:</strong> michael.okello@bugemauniversity.com</p>
                                     <p><strong>Phone:</strong> +256 765724432</p>
-                                    <p><strong>Office:</strong> Computing and informatics</p>
+                                    <p><strong>Office:</strong> Computing and Informatics</p>
                                 </div>
                             </div>
                             
@@ -131,7 +169,7 @@
                                 <ul>
                                     <li>Data Structures & Algorithms (CSC 201)</li>
                                     <li>Discrete Mathematics (MAT 101)</li>
-                                    <li>C programming(BCNT 2101)</li>
+                                    <li>C Programming (BCNT 2101)</li>
                                     <li>Graph Theory (Advanced Topics)</li>
                                 </ul>
                             </div>

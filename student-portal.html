@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal - Bugema University Computing and Informatics</title>
+    <title>Student Portal - Bugema University</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon icon" id="themeIcon"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
         <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="IMG/bu.png" alt="Bugema University Logo">
-                    <div>
-                        <h1>Bugema University</h1>
-                        <p>Department of Computing and Informatics</p>
-                    </div>
+            <div class="top-bar-left">
+                <a href="https://eportal.bugemauniv.ac.ug/" target="_blank">Student Portal</a>
+                <a href="https://erms.bugemauniv.ac.ug/buerms/" target="_blank">Staff Portal</a>
+                <a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning</a>
+                <a href="https://lib.bugemauniv.ac.ug/" target="_blank">Library</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/+256769593407" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+                <a href="mailto:info@bugemauniv.ac.ug"><i class="fas fa-envelope"></i> info@bugemauniv.ac.ug</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="IMG/bu.png" alt="Bugema University Logo" class="logo">
+                <div class="header-text">
+                    <h1>Bugema University</h1>
+                    <p>Department of Computing and Informatics</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
@@ -28,11 +51,11 @@
         <div class="nav-container">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
                     <a href="departments.html">Academic</a>
                     <div class="dropdown-content">
-                        <a href="departments.html">Departments</a>
+                        <a href="departments.html">Schools & Departments</a>
                         <a href="programs.html">Programs</a>
                         <a href="admissions.html">Admissions</a>
                         <a href="timetable.html">Timetable</a>
@@ -41,13 +64,25 @@
                 <li class="dropdown">
                     <a href="research.html">Research</a>
                     <div class="dropdown-content">
-                        <a href="research.html">Research</a>
+                        <a href="research.html">Research Overview</a>
                         <a href="faculty-achievements.html">Faculty Achievements</a>
                         <a href="publications.html">Publications</a>
                     </div>
                 </li>
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="news.html">News & Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="student-portal.html">Student Portal</a>
+                    <div class="dropdown-content">
+                        <a href="student-portal.html">Student Portal</a>
+                        <a href="course-registration.html">Course Registration</a>
+                        <a href="downloadable-forms.html">Forms</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
                 <li><a href="contact.html">Contact</a></li>
                 <li class="dropdown">
                     <a href="student-portal.html">Student Portal</a>
@@ -98,6 +133,45 @@
                             <a href="#" class="btn btn-secondary">First Time User?</a>
                         </div>
                     </form>
+                </div>
+            </section>
+
+            <!-- University Portals Access -->
+            <section class="section fade-in">
+                <h2>🔗 University Portals</h2>
+                <div class="portal-grid">
+                    <div class="portal-card">
+                        <div class="portal-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Student Portal</h3>
+                        <p>Access your academic records, course registration, grades, and student services.</p>
+                        <a href="https://eportal.bugemauniv.ac.ug/" target="_blank" class="btn-primary">Access Portal</a>
+                    </div>
+                    <div class="portal-card">
+                        <div class="portal-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Staff Portal</h3>
+                        <p>Faculty and staff access for teaching resources, student management, and administrative tools.</p>
+                        <a href="https://erms.bugemauniv.ac.ug/buerms/" target="_blank" class="btn-primary">Access Portal</a>
+                    </div>
+                    <div class="portal-card">
+                        <div class="portal-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>E-Learning</h3>
+                        <p>Online learning platform for course materials, assignments, and virtual classrooms.</p>
+                        <a href="https://elearning.bugemauniv.ac.ug/" target="_blank" class="btn-primary">Access Portal</a>
+                    </div>
+                    <div class="portal-card">
+                        <div class="portal-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Library</h3>
+                        <p>Digital library resources, e-books, journals, and research databases.</p>
+                        <a href="https://lib.bugemauniv.ac.ug/" target="_blank" class="btn-primary">Access Library</a>
+                    </div>
                 </div>
             </section>
 

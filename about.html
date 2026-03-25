@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Bugema University Computing and Informatics</title>
+    <title>About Us - Bugema University</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon icon" id="themeIcon"></i>
+    </button>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
         <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="IMG/bu.png" alt="Bugema University Logo">
-                    <div>
-                        <h1>Bugema University</h1>
-                        <p>Department of Computing and Informatics</p>
-                    </div>
+            <div class="top-bar-left">
+                <a href="https://eportal.bugemauniv.ac.ug/" target="_blank">Student Portal</a>
+                <a href="https://erms.bugemauniv.ac.ug/buerms/" target="_blank">Staff Portal</a>
+                <a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning</a>
+                <a href="https://lib.bugemauniv.ac.ug/" target="_blank">Library</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="mailto:info@bugemauniv.ac.ug"><i class="fas fa-envelope"></i> info@bugemauniv.ac.ug</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="IMG/it.jpg" alt="Bugema University Logo" class="logo">
+                <div class="header-text">
+                    <h1>Bugema University</h1>
+                    <p>Department of Computing and Informatics</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
@@ -26,24 +50,35 @@
         <div class="nav-container">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
                     <a href="departments.html">Academic</a>
                     <div class="dropdown-content">
-                        <a href="departments.html">Departments</a>
+                        <a href="departments.html">Schools & Departments</a>
                         <a href="programs.html">Programs</a>
                         <a href="admissions.html">Admissions</a>
+                        <a href="timetable.html">Timetable</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="research.html">Research</a>
                     <div class="dropdown-content">
-                        <a href="research.html">Research & Publications</a>
-                        <a href="news.html">News & Events</a>
+                        <a href="research.html">Research Overview</a>
+                        <a href="faculty-achievements.html">Faculty Achievements</a>
+                        <a href="publications.html">Publications</a>
                     </div>
                 </li>
                 <li><a href="staff.html">Staff</a></li>
+                <li><a href="news.html">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="student-portal.html">Student Portal</a>
+                    <div class="dropdown-content">
+                        <a href="student-portal.html">Student Portal</a>
+                        <a href="course-registration.html">Course Registration</a>
+                        <a href="downloadable-forms.html">Forms</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -61,15 +96,19 @@
             <!-- Department Image -->
             <section class="section fade-in">
                 <div class="card-glass hover-lift">
-                    <img src="IMG/IMG-20260322-WA0003.jpg" alt="Department Building" style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px; margin-bottom: 1.5rem;">
-                    <div style="padding: 1.5rem;">
-                        <h2 class="text-gradient">Welcome to Our Department</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.6; color: #031d72aa; margin-bottom: 1rem;">
-                            Welcome to the Department of Computing and Informatics at Bugema University! As we navigate the rapidly evolving landscape of technology, our department remains committed to providing exceptional education that prepares students for successful careers in the digital age.
-                        </p>
-                        <p style="font-size: 1.1rem; line-height: 1.6; color: #031d72aa;">
-                            Our comprehensive programs, combined with hands-on learning experiences and industry partnerships, ensure that our graduates are well-equipped to meet the challenges and opportunities of the technology sector. We invite you to explore our programs and join us in shaping the future of computing.
-                        </p>
+                    <div class="grid grid-2 align-center">
+                        <div class="welcome-content">
+                            <h2 class="text-gradient">Welcome to Our Department</h2>
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: #031d72aa; margin-bottom: 1rem;">
+                                Welcome to the Department of Computing and Informatics at Bugema University! As we navigate the rapidly evolving landscape of technology, our Department remains committed to providing exceptional education that prepares students for successful careers in the digital age.
+                            </p>
+                            <p style="font-size: 1.1rem; line-height: 1.6; color: #031d72aa;">
+                                Our comprehensive programs, combined with hands-on learning experiences and industry partnerships, ensure that our graduates are well-equipped to meet the challenges and opportunities of the technology sector. We invite you to explore our programs and join us in shaping the future of computing.
+                            </p>
+                        </div>
+                        <div class="department-image">
+                            <img src="IMG/IMG-20260322-WA0003.jpg" alt="Department Building" class="featured-image">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -485,5 +524,12 @@
         // Initialize back to top button
         createBackToTopButton();
     </script>
+    
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/+256769593407" target="_blank" title="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 </body>
 </html>
