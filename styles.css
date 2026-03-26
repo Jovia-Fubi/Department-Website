@@ -11,7 +11,9 @@ body {
     line-height: 1.6;
     color: #2c3e50;
     background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
-}{
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -52,7 +54,7 @@ header {
 .logo {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -70,7 +72,7 @@ header {
     right: -4px;
     bottom: -4px;
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    border-radius: 50%;
+    border-radius: 12px;
     z-index: -1;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
 }
@@ -132,35 +134,15 @@ header {
     color: #f0f0f0;
 }
 
-/* Header Actions - Makerere Style */
-.header-actions {
-    display: flex;
-    align-items: center;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    background: #f8f9fa;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
-}
-
-.search-input {
-    border: none;
-    background: transparent;
-    padding: 0.3rem;
-    width: 200px;
-    outline: none;
-}
-
-.search-btn {
-    background: none;
-    border: none;
-    color: #666;
-    cursor: pointer;
-    padding: 0.3rem;
+/* Header Styles - Enhanced Dark Blue */
+header {
+    background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /* Hero Section - Makerere Style */
@@ -228,7 +210,7 @@ header {
     padding: 1rem 2.5rem;
     text-decoration: none;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
@@ -242,7 +224,7 @@ header {
     transform: translateY(-2px);
 }
 
-/* Quick Links Section - Enhanced */
+
 .quick-links-section {
     background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
     padding: 4rem 0;
@@ -267,7 +249,7 @@ header {
 .quick-link-item {
     background: white;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -324,7 +306,7 @@ header {
 .news-item {
     background: white;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -393,7 +375,7 @@ header {
     gap: 1.5rem;
     background: white;
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -406,7 +388,7 @@ header {
     min-width: 70px;
     height: 70px;
     background: #1e40af;
-    border-radius: 8px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -542,13 +524,10 @@ header {
 .portal-card {
     background: white;
     padding: 2.5rem;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid #e8f4fd;
-    position: relative;
-    overflow: hidden;
 }
 
 .portal-card::before {
@@ -597,6 +576,19 @@ header {
     line-height: 1.6;
     margin-bottom: 1.5rem;
     font-size: 1rem;
+}
+
+.portal-card .btn-primary-makerere {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 0.95rem;
 }
 
 .portal-card .btn-primary {
@@ -663,12 +655,10 @@ header {
 .staff-card {
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #e2e8f0;
-    position: relative;
-    overflow: hidden;
 }
 
 .staff-card::before {
@@ -690,7 +680,7 @@ header {
     width: 180px;
     height: 180px;
     margin: 0 auto 1.5rem;
-    border-radius: 50%;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     border: 4px solid #e8f4fd;
@@ -707,7 +697,7 @@ header {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    border-radius: 50%;
+    border-radius: 12px;
     border: 2px solid transparent;
     background: linear-gradient(135deg, #1e40af, #3b82f6, #06b6d4, #10b981, #3b82f6, #1e40af);
     z-index: -1;
@@ -723,7 +713,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 6px;
     transition: transform 0.3s ease;
 }
 
@@ -736,6 +726,102 @@ header {
     margin-bottom: 0.5rem;
     color: #1e40af;
     font-weight: 600;
+}
+
+/* Academic Staff by Course Areas - Center Aligned */
+.academic-staff-section {
+    text-align: center;
+}
+
+.academic-staff-section .section {
+    text-align: center;
+}
+
+.academic-staff-section .grid {
+    justify-content: center;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-profile {
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.academic-staff-section .faculty-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.academic-staff-section .faculty-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #e8f4fd;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 3px;
+    flex-shrink: 0;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-info {
+    flex: 1;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+.academic-staff-section .faculty-info p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+.academic-staff-section .faculty-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8f4fd;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #1e40af;
+    font-weight: 600;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.academic-staff-section .faculty-section li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+    color: #64748b;
 }
 
 .staff-contact {
@@ -760,11 +846,10 @@ header {
 
 .faculty-profile {
     background: white;
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid #e8f4fd;
 }
 
 .faculty-profile:hover {
@@ -782,7 +867,7 @@ header {
 .faculty-avatar {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
     overflow: hidden;
     border: 3px solid #e8f4fd;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
@@ -830,6 +915,29 @@ header {
     border-bottom: 1px solid #f1f5f9;
     font-size: 0.9rem;
     color: #64748b;
+}
+
+/* Page Centering Utility */
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.page-center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
 }
 
 .research-interests {
@@ -896,11 +1004,11 @@ nav {
     transition: all 0.3s ease;
     border-radius: 0;
     border: none;
-    background: transparent;
+    background: #3e2723;
 }
 
 .nav-list a:hover {
-    background: linear-gradient(135deg, #5a6268 0%, #343a40 100%);
+    background: linear-gradient(135deg, #5d4037 0%, #4e342e 100%);
     color: #ffffff;
     border-radius: 0;
 }
@@ -913,7 +1021,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    background: linear-gradient(135deg, #4e342e 0%, #3e2723 100%);
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -943,7 +1051,7 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background: linear-gradient(135deg, #5a6268 0%, #343a40 100%);
+    background: linear-gradient(135deg, #5d4037 0%, #4e342e 100%);
     color: #ffffff;
     border-radius: 0;
 }
@@ -996,7 +1104,7 @@ main {
 .card {
     background: white;
     border: 1px solid #e8f4fd;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(30, 64, 175, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -2273,7 +2381,7 @@ img {
     z-index: 1000;
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
     border: none;
-    border-radius: 50%;
+    border-radius: 8px;
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -2418,7 +2526,7 @@ body.dark-mode .staff-contact i {
 }
 
 body.dark-mode nav {
-    background: linear-gradient(135deg, #2d2d2d 0%, #404040 100%);
+    background: linear-gradient(135deg, #3e2723 0%, #4e342e 100%);
 }
 
 body.dark-mode .nav-list a {
@@ -2430,8 +2538,8 @@ body.dark-mode .nav-list a:hover {
 }
 
 body.dark-mode .dropdown-content {
-    background: #2d2d2d;
-    border: 1px solid #555555;
+    background: #3e2723;
+    border: 1px solid #4e342e;
 }
 
 body.dark-mode .dropdown-content a {
@@ -2439,7 +2547,7 @@ body.dark-mode .dropdown-content a {
 }
 
 body.dark-mode .dropdown-content a:hover {
-    background: #404040;
+    background: #4e342e;
 }
 
 /* Smooth theme transition */
