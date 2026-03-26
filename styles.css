@@ -147,7 +147,7 @@ header {
 
 /* Hero Section - Makerere Style */
 .hero-section-makerere {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('IMG/lind.png') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('lind.png') center/cover;
     color: white;
     padding: 8rem 0 6rem;
     text-align: center;
